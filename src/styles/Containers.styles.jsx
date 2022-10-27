@@ -7,3 +7,9 @@ export const FlexColumn = styled.div`
     justify-content: center;
     align-items: center;
 `;
+export const FlexRow = styled.div`
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+`;
