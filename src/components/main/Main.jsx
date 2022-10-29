@@ -12,6 +12,86 @@ const Main = () => {
                 <H2>Food Name</H2>
                 <ViewButton>View Recipe</ViewButton>
             </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
+            <Card>
+                <H2>Food Name</H2>
+                <ViewButton>View Recipe</ViewButton>
+            </Card>
         </Container>
     );
 };

@@ -4,6 +4,9 @@ export const Nav = styled.nav`
     background-color: #ffae00;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
 `;
 
 export const Logo = styled.img`

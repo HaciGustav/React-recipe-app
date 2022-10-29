@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FlexColumn } from '../../styles/Containers.styles';
 import { Button, Input } from '../../styles/Inputs.styles';
 import { PageCenter } from '../../styles/PageCenter.styles';
 
-const Login = () => {
+const Login = ({ handleLogin }) => {
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
+        handleLogin();
     };
 
     return (
@@ -35,7 +37,7 @@ const Login = () => {
                         placeholder="PASSWORD"
                     />
                     <Button onClick={(e) => handleSubmit(e)} type="submit">
-                        Login
+                        <Link to="/home">Login</Link>
                     </Button>
                 </FlexColumn>
             </form>
