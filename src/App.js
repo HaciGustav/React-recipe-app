@@ -10,11 +10,21 @@ function App() {
     const handleLogin = () => {
         setUser(true);
     };
+    const handleLogout = () => {
+        setUser(false);
+    };
     console.log(user);
     return (
         <BrowserRouter>
-            <Login handleLogin={handleLogin} />
-            <Home />
+            {user ? <Home /> : <Login handleLogin={handleLogin} />}
+            {/* <Routes>
+                <Route
+                    path="/home"
+                    element={<Home handleLogout={handleLogout} />}
+                />
+                <Route path="/about" element={<About />} />
+                <Route path="/" element={<Login />} />
+            </Routes> */}
         </BrowserRouter>
     );
 }

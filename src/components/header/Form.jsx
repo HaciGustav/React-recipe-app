@@ -8,16 +8,33 @@ import {
     Select,
 } from '../../styles/Inputs.styles';
 
-const Form = () => {
+const Form = ({ getValues, formValues, fetchData }) => {
     return (
         <form>
             <FlexRow>
-                <Input type="text" />
-                <SearchButton>Search</SearchButton>
-                <Select>
+                <Input
+                    type="text"
+                    onChange={(e) => getValues(e)}
+                    value={formValues.query}
+                    name="query"
+                />
+                <SearchButton
+                    onClick={(e) => {
+                        e.preventDefault();
+                        fetchData(formValues);
+                    }}>
+                    Search
+                </SearchButton>
+                <Select
+                    name="mealType"
+                    onClick={(e) => {
+                        getValues(e);
+                        console.log(e.target.value);
+                        console.log(e.target.name);
+                    }}>
                     <Option value="Breakfast">Breakfast</Option>
                     <Option value="Brunch">Brunch</Option>
-                    <Option value="Lunch/Diner">Lunch/Diner</Option>
+                    <Option value="Dinner">Dinner</Option>
                     <Option value="Snack">Snack</Option>
                     <Option value="Teatime">Teatime</Option>
                 </Select>

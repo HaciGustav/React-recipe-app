@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Li, Logo, Nav, Ul } from './Navbar.styled';
 
-const Navbar = () => {
+const Navbar = ({ handleLogout }) => {
+    const navigate = useNavigate();
     return (
         <Nav>
             <Logo />
@@ -17,7 +18,14 @@ const Navbar = () => {
                     <Link to="#">Github</Link>
                 </Li>
                 <Li>
-                    <Link to="/">Logout</Link>
+                    <Link
+                        to="/"
+                        onClick={() => {
+                            navigate('/');
+                            handleLogout();
+                        }}>
+                        Logout
+                    </Link>
                 </Li>
             </Ul>
         </Nav>

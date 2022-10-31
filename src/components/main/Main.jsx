@@ -1,97 +1,29 @@
 import React from 'react';
-import { Card, Container, H2, ViewButton } from './Main.styles';
+import {
+    Card,
+    Container,
+    H2,
+    Image,
+    ImageDiv,
+    ViewButton,
+} from './Main.styles';
 
-const Main = () => {
+const Main = ({ data }) => {
     return (
         <Container>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
-            <Card>
-                <H2>Food Name</H2>
-                <ViewButton>View Recipe</ViewButton>
-            </Card>
+            {data?.hits?.map((item) => {
+                return (
+                    <Card>
+                        {/* <Image src={item.recipe.image} /> */}
+
+                        <ImageDiv bgUrl={item.recipe.image}></ImageDiv>
+
+                        <H2>{item.recipe.label}</H2>
+
+                        <ViewButton>View Recipe</ViewButton>
+                    </Card>
+                );
+            })}
         </Container>
     );
 };

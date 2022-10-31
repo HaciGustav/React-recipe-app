@@ -7,7 +7,7 @@ export const FooterStyle = styled.footer`
     justify-content: center;
     background-color: #000;
     width: 100%;
-    padding: 1.5rem;
+    padding: 0.8rem;
 `;
 
 export const P = styled.p`

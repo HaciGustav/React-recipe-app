@@ -1,21 +1,21 @@
 import React from 'react';
 import { FlexColumn } from '../../styles/Containers.styles';
+import { HeaderSect } from './Header.styled';
 import Navbar from '../navbar/Navbar';
 import Form from './Form';
 
-const Header = () => {
+const Header = ({ getValues, fetchData, formValues }) => {
     return (
-        <header
-            style={{
-                backgroundColor: '#FF5A33',
-                padding: '2rem 0',
-                paddingTop: '5rem',
-            }}>
+        <HeaderSect>
             <FlexColumn>
                 <h1>Food Search</h1>
-                <Form />
+                <Form
+                    getValues={getValues}
+                    fetchData={fetchData}
+                    formValues={formValues}
+                />
             </FlexColumn>
-        </header>
+        </HeaderSect>
     );
 };
 

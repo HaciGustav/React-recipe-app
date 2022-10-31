@@ -8,7 +8,7 @@ export const Container = styled.div`
     gap: 1.5rem;
     display: grid;
 
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
 `;
 
 export const Card = styled.div`
@@ -31,4 +31,17 @@ export const ViewButton = styled.button`
     &:hover {
         transform: scale(0.95);
     }
+`;
+export const Image = styled.img`
+    width: calc(100% - 1rem);
+    border-radius: 10px;
+`;
+export const ImageDiv = styled.div`
+    width: calc(100% - 1rem);
+    height: 15rem;
+    border-radius: 10px;
+    background-image: url(${({ bgUrl }) => bgUrl && bgUrl});
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 `;
