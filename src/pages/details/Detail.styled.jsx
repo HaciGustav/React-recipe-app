@@ -3,18 +3,17 @@ import styled from 'styled-components';
 export const H2 = styled.h2`
     text-align: center;
 
-    /* padding: 1rem; */
-    /* background-color: #000000ce; */
     color: beige;
-    /* width: 90%; */
+
     margin-inline: auto;
 `;
 export const P = styled.p`
     text-align: center;
+    font-size: 1rem;
     padding: 0.5rem;
-    /* background-color: #000000ce; */
+
     color: beige;
-    /* width: 90%; */
+
     margin-inline: auto;
 `;
 export const Container = styled.div`
@@ -37,29 +36,30 @@ export const Span = styled.span`
     font-size: 0.7rem;
     padding-top: 0.2rem;
     padding-inline: 0.3rem;
-    transition: all 0.2s;
+    transition: all 0.1s;
     border-right: 2px solid beige;
     &:hover {
         transform: scale(2);
-        border: 1px solid lightblue;
+        border-inline: 1px solid lightblue;
+        background-color: black;
         text-align: center;
         padding: 0.2rem;
         font-weight: 600;
         z-index: 9999;
-        border-radius: 10px;
+
         position: relative;
         right: 0;
     }
 `;
 export const Image = styled.img`
     border-radius: 1rem;
-    /* width: 100%; */
+
     min-width: 15rem;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 `;
 export const ContentDiv = styled.div`
     padding: 1rem 0.5rem;
-    /* width: 75%; */
+
     margin-inline: auto;
     display: flex;
     flex-direction: column;
@@ -74,11 +74,12 @@ export const LabelsDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
     padding: 0.2rem;
-    /* border-right: 4px dashed beige; */
+
     color: beige;
 `;
 export const Ingredients = styled.div`
     align-self: center;
+    text-align: center;
 `;
 export const Li = styled.li`
     word-wrap: break-word;

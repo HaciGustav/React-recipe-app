@@ -6,7 +6,7 @@ const Navbar = ({ handleLogout }) => {
     const navigate = useNavigate();
     return (
         <Nav>
-            <Logo />
+            <Logo onClick={() => navigate('/home')}>Explorateur de Saveur</Logo>
             <Ul>
                 <Li>
                     <Link to="/home">Home</Link>
@@ -15,7 +15,11 @@ const Navbar = ({ handleLogout }) => {
                     <Link to="/about">About</Link>
                 </Li>
                 <Li>
-                    <Link to="#">Github</Link>
+                    <a
+                        href="https://github.com/HaciGustav"
+                        style={{ color: 'black' }}>
+                        Github
+                    </a>
                 </Li>
                 <Li>
                     <Link
