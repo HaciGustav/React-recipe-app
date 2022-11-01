@@ -17,7 +17,7 @@ const Form = ({ getValues, formValues, fetchData }) => {
                     onChange={(e) => getValues(e)}
                     value={formValues.query}
                     name="query"
-                    placeholder="food Name"
+                    placeholder="Meal Name"
                 />
                 <SearchButton
                     onClick={(e) => {

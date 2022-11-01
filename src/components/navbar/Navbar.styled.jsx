@@ -24,7 +24,7 @@ export const Ul = styled.ul`
 export const Li = styled.li`
     font-size: 1.3rem;
     &:hover {
-        border-bottom: 2px solid #634a00;
+        border-bottom: 4px solid #634a00;
     }
     @media (max-width: 460px) {
         font-size: 1rem;

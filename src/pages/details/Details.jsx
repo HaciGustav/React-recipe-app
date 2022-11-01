@@ -32,17 +32,23 @@ const Details = () => {
     return (
         <>
             <Container>
-                <H2>{label}</H2>
-                <P>
-                    {cuisineType[0].toUpperCase()} ♦ {dishType[0].toUpperCase()}{' '}
-                    ♦ {mealType[0].toUpperCase()}{' '}
-                </P>
-
                 <ContentDiv>
                     <Image src={image} />
 
+                    <H2>{label}</H2>
+                    <P>
+                        {cuisineType[0].toUpperCase()} ♦{' '}
+                        {dishType[0].toUpperCase()} ♦{' '}
+                        {mealType[0].toUpperCase()}{' '}
+                    </P>
+                    <Ingredients>
+                        <ul>
+                            {ingredientLines.map((item, i) => {
+                                return <Li key={i}>⚜ {item}</Li>;
+                            })}
+                        </ul>
+                    </Ingredients>
                     <LabelsDiv>
-                        <h6>Health Labels </h6>
                         {healthLabels
                             .slice(0, healthLabels.length / 2)
                             ?.map((label, i) => (
@@ -56,14 +62,6 @@ const Details = () => {
                                 <Span key={i}>{label} ✔</Span>
                             ))}
                     </LabelsDiv>
-
-                    <Ingredients>
-                        <ul>
-                            {ingredientLines.map((item, i) => {
-                                return <Li key={i}>⚜ {item}</Li>;
-                            })}
-                        </ul>
-                    </Ingredients>
                 </ContentDiv>
             </Container>
             <BackButton onClick={() => navigate(-1)}>⬅</BackButton>

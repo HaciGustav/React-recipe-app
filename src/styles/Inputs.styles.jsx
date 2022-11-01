@@ -47,16 +47,18 @@ export const Form = styled.form`
     border-radius: 2rem;
 `;
 export const BackButton = styled.button`
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
+    border-radius: 1rem;
+    border: none;
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    display: flex;
+
+    padding: 0 0.5rem;
+    bottom: 1rem;
+    right: 1rem;
     transition: all 0.3s;
     background-color: darkred;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     &:hover {
         background-color: #fff;

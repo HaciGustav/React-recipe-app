@@ -3,22 +3,16 @@ import styled from 'styled-components';
 export const H2 = styled.h2`
     text-align: center;
 
-    padding: 1rem;
-    background-color: #000000ce;
+    /* padding: 1rem; */
+    /* background-color: #000000ce; */
     color: beige;
     /* width: 90%; */
     margin-inline: auto;
-    @media (max-width: 500px) {
-        padding-top: 3rem;
-    }
-    @media (max-width: 350px) {
-        padding-top: 9rem;
-    }
 `;
 export const P = styled.p`
     text-align: center;
     padding: 0.5rem;
-    background-color: #000000ce;
+    /* background-color: #000000ce; */
     color: beige;
     /* width: 90%; */
     margin-inline: auto;
@@ -27,6 +21,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-image: url('/img/details-bg.jpg');
     background-position: center;
     background-size: cover;
@@ -41,7 +36,9 @@ export const Container = styled.div`
 export const Span = styled.span`
     font-size: 0.7rem;
     padding-top: 0.2rem;
+    padding-inline: 0.3rem;
     transition: all 0.2s;
+    border-right: 2px solid beige;
     &:hover {
         transform: scale(2);
         border: 1px solid lightblue;
@@ -56,27 +53,28 @@ export const Span = styled.span`
 `;
 export const Image = styled.img`
     border-radius: 1rem;
-    width: 25%;
+    /* width: 100%; */
     min-width: 15rem;
     margin: 1rem 0;
 `;
 export const ContentDiv = styled.div`
     padding: 1rem 0.5rem;
-
-    width: 75%;
+    /* width: 75%; */
     margin-inline: auto;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    column-gap: 2rem;
+    align-items: center;
+    row-gap: 0.5rem;
     background-color: #000000ce;
     color: white;
 `;
 export const LabelsDiv = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 0.2rem;
-    border-right: 4px dashed beige;
+    /* border-right: 4px dashed beige; */
     color: beige;
 `;
 export const Ingredients = styled.div`
