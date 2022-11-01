@@ -13,7 +13,7 @@ import {
 
 const Main = ({ data }) => {
     const navigate = useNavigate();
-    console.log(data);
+
     return (
         <>
             {data.hits ? (

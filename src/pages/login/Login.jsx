@@ -13,7 +13,7 @@ const Login = ({ handleLogin }) => {
         handleLogin(password, userName, setPassword, setUserName);
         e.preventDefault();
     };
-    console.log(userName, password);
+
     const navigate = useNavigate();
 
     return (
@@ -24,7 +24,6 @@ const Login = ({ handleLogin }) => {
                     <Input
                         onChange={(e) => {
                             setUserName(e.target.value);
-                            console.log(e.target.value);
                         }}
                         value={userName}
                         required
@@ -33,7 +32,6 @@ const Login = ({ handleLogin }) => {
                     <Input
                         onChange={(e) => {
                             setPassword(e.target.value);
-                            console.log(e.target.value);
                         }}
                         value={password}
                         type="password"

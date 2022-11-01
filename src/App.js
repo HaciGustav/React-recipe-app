@@ -20,7 +20,6 @@ function App() {
     const handleLogout = () => {
         setUser(false);
     };
-    console.log(user);
 
     return (
         <BrowserRouter>

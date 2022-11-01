@@ -25,7 +25,6 @@ const Navbar = ({ handleLogout }) => {
                     <Link
                         to="/"
                         onClick={() => {
-                            navigate('/');
                             handleLogout();
                         }}>
                         Logout

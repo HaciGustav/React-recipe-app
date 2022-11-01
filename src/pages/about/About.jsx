@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-import Navbar from '../../components/navbar/Navbar';
+
 import { BackButton } from '../../styles/Inputs.styles';
 import { BgDiv, Container, P } from './About.styled';
 

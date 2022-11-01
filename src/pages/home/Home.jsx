@@ -25,9 +25,6 @@ const Home = ({ setLoading, loading }) => {
         const apiId = 'a685f529';
         const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${formValues.query}&app_id=${apiId}&app_key=${apiKey}&mealType=${formValues.mealType}`;
         await axios(url).then((res) => {
-            if (!res.ok) {
-                console.log(`ERROR ${res.status}`);
-            }
             setData(res.data);
         });
         setLoading(false);
