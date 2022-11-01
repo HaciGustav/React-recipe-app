@@ -14,7 +14,7 @@ function App() {
         if (password != '' && userName != '') {
             setUser(true);
         } else {
-            alert('Please fill out the required felds! ');
+            alert('Please fill out the required fields! ');
         }
     };
     const handleLogout = () => {
