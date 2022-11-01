@@ -42,10 +42,11 @@ export const Option = styled.option`
 `;
 export const Form = styled.form`
     padding: 3rem;
-    border: 3px solid #44803f;
-    background-color: #26736590;
+    border: 3px solid #590202;
+    background-color: #5902029e;
     border-radius: 2rem;
 `;
+
 export const BackButton = styled.button`
     border-radius: 1rem;
     border: none;

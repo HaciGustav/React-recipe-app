@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { Logo } from '../../components/navbar/Navbar.styled';
 import { FlexColumn } from '../../styles/Containers.styles';
 import { Button, Form, Input } from '../../styles/Inputs.styles';
 import { PageCenter } from '../../styles/PageCenter.styles';
@@ -9,14 +10,17 @@ const Login = ({ handleLogin }) => {
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
+        handleLogin(password, userName);
         e.preventDefault();
-        handleLogin();
     };
+    console.log(userName, password);
+    const navigate = useNavigate();
 
     return (
         <PageCenter bgImg>
             <Form>
                 <FlexColumn>
+                    <Logo>Explorateur de Saveur</Logo>
                     <Input
                         onChange={(e) => {
                             setUserName(e.target.value);
@@ -36,8 +40,13 @@ const Login = ({ handleLogin }) => {
                         required
                         placeholder="PASSWORD"
                     />
-                    <Button onClick={(e) => handleSubmit(e)} type="submit">
-                        <Link to="/home">Login</Link>
+                    <Button
+                        onClick={(e) => {
+                            handleSubmit(e);
+                            navigate('/home');
+                        }}
+                        type="submit">
+                        Login
                     </Button>
                 </FlexColumn>
             </Form>

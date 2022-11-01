@@ -33,6 +33,20 @@ const Details = () => {
         <>
             <Container>
                 <ContentDiv>
+                    <LabelsDiv>
+                        {healthLabels
+                            .slice(0, healthLabels.length / 2)
+                            ?.map((label, i) => (
+                                <Span key={i}>{label} ✔</Span>
+                            ))}
+                    </LabelsDiv>
+                    <LabelsDiv>
+                        {healthLabels
+                            .slice(healthLabels.length / 2, healthLabels.length)
+                            ?.map((label, i) => (
+                                <Span key={i}>{label} ✔</Span>
+                            ))}
+                    </LabelsDiv>
                     <Image src={image} />
 
                     <H2>{label}</H2>
@@ -48,20 +62,6 @@ const Details = () => {
                             })}
                         </ul>
                     </Ingredients>
-                    <LabelsDiv>
-                        {healthLabels
-                            .slice(0, healthLabels.length / 2)
-                            ?.map((label, i) => (
-                                <Span key={i}>{label} ✔</Span>
-                            ))}
-                    </LabelsDiv>
-                    <LabelsDiv>
-                        {healthLabels
-                            .slice(healthLabels.length / 2, healthLabels.length)
-                            ?.map((label, i) => (
-                                <Span key={i}>{label} ✔</Span>
-                            ))}
-                    </LabelsDiv>
                 </ContentDiv>
             </Container>
             <BackButton onClick={() => navigate(-1)}>⬅</BackButton>
