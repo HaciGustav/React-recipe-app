@@ -6,11 +6,15 @@ export const Nav = styled.nav`
     justify-content: space-between;
 `;
 
-export const Logo = styled.img`
-    border: 2px solid red;
-    width: 20%;
-    height: 3rem;
+export const Logo = styled.span`
+    /* border: 2px solid red; */
+    font-size: 2rem;
+    font-weight: 600;
+    /* height: 3rem; */
+    padding: 0.3rem;
     min-width: 5rem;
+    font-family: 'Great Vibes', cursive;
+    cursor: pointer;
 `;
 
 export const Ul = styled.ul`
@@ -23,6 +27,7 @@ export const Ul = styled.ul`
 
 export const Li = styled.li`
     font-size: 1.3rem;
+
     &:hover {
         border-bottom: 4px solid #634a00;
     }

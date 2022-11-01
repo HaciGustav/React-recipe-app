@@ -44,7 +44,8 @@ export const ViewButton = styled.button`
     border-radius: 10px;
     font-size: 1.1rem;
     border: none;
-    background-color: #f28705;
+    color: beige;
+    background-color: #267365a9;
     &:hover {
         transform: scale(0.95);
     }
@@ -53,15 +54,16 @@ export const Image = styled.img`
     width: 100%;
     height: 100%;
     border-radius: 1rem 1rem 0 0;
-    /* position: absolute; */
-    top: 0;
 `;
-export const ImageDiv = styled.div`
-    width: 100%;
-    height: 15rem;
-    border-radius: 10px;
-    background-image: url(${({ bgUrl }) => bgUrl && bgUrl});
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+export const ImageEmpty = styled.img`
+    width: 200px;
+    padding-top: 2rem;
+    margin: auto;
+`;
+export const LoadingWrapper = styled.div`
+    display: flex;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 `;
