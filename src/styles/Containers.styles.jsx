@@ -12,4 +12,6 @@ export const FlexRow = styled.div`
     column-gap: 0.5rem;
     justify-content: center;
     align-items: center;
+    width: ${({ width }) => width && width};
+    height: ${({ height }) => height && height};
 `;

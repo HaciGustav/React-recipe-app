@@ -9,6 +9,7 @@ export const BgDiv = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: -10;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,4 +27,5 @@ export const Container = styled.div`
     height: 95%;
     margin: auto;
     color: #fff;
+    /* box-shadow: 120px 80px 40px 20px #0ff; */
 `;

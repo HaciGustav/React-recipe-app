@@ -1,19 +1,16 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-    background-color: #ffae00;
+    background-color: #590202;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
 `;
 
 export const Logo = styled.img`
     border: 2px solid red;
     width: 20%;
     height: 3rem;
-    min-width: 10rem;
+    min-width: 5rem;
 `;
 
 export const Ul = styled.ul`
@@ -28,5 +25,8 @@ export const Li = styled.li`
     font-size: 1.3rem;
     &:hover {
         border-bottom: 2px solid #634a00;
+    }
+    @media (max-width: 460px) {
+        font-size: 1rem;
     }
 `;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FlexColumn } from '../../styles/Containers.styles';
-import { Button, Input } from '../../styles/Inputs.styles';
+import { Button, Form, Input } from '../../styles/Inputs.styles';
 import { PageCenter } from '../../styles/PageCenter.styles';
 
 const Login = ({ handleLogin }) => {
@@ -15,7 +15,7 @@ const Login = ({ handleLogin }) => {
 
     return (
         <PageCenter bgImg>
-            <form>
+            <Form>
                 <FlexColumn>
                     <Input
                         onChange={(e) => {
@@ -40,7 +40,7 @@ const Login = ({ handleLogin }) => {
                         <Link to="/home">Login</Link>
                     </Button>
                 </FlexColumn>
-            </form>
+            </Form>
         </PageCenter>
     );
 };
