@@ -8,7 +8,7 @@ const Header = ({ getValues, fetchData, formValues }) => {
     return (
         <HeaderSect>
             <FlexColumn>
-                <h1>Food Search</h1>
+                <h1>Recipe Search</h1>
                 <Form
                     getValues={getValues}
                     fetchData={fetchData}

@@ -15,6 +15,9 @@ export const Logo = styled.span`
     min-width: 5rem;
     font-family: 'Great Vibes', cursive;
     cursor: pointer;
+    @media (max-width: 400px) {
+        font-size: 1.5rem;
+    }
 `;
 
 export const Ul = styled.ul`
@@ -23,10 +26,14 @@ export const Ul = styled.ul`
     align-items: center;
     list-style-type: none;
     padding-right: 2rem;
+    @media (max-width: 400px) {
+        column-gap: 2px;
+    }
 `;
 
 export const Li = styled.li`
     font-size: 1.3rem;
+    font-weight: 600;
 
     &:hover {
         border-bottom: 4px solid #634a00;

@@ -56,7 +56,7 @@ export const Image = styled.img`
     border-radius: 1rem 1rem 0 0;
 `;
 export const ImageEmpty = styled.img`
-    width: 200px;
+    width: 150px;
     padding-top: 2rem;
     margin: auto;
 `;

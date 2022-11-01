@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-import { FlexRow } from '../../styles/Containers.styles';
+import { FlexColumn, FlexRow } from '../../styles/Containers.styles';
 import {
     Card,
     Container,
@@ -43,10 +43,10 @@ const Main = ({ data }) => {
                 </Container>
             ) : (
                 <FlexRow>
-                    <div>
+                    <FlexColumn>
                         <ImageEmpty src="./img/ratatouille.png" />
                         <h1>Waiting for a Search!!</h1>
-                    </div>
+                    </FlexColumn>
                 </FlexRow>
             )}
         </>

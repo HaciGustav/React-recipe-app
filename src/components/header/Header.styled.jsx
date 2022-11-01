@@ -6,6 +6,6 @@ export const HeaderSect = styled.header`
     padding-top: 2rem;
     width: 50%;
     border-radius: 0 0 2rem 2rem;
-    min-width: 360px;
+    min-width: 320px;
     margin: auto;
 `;

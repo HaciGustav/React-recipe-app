@@ -10,7 +10,7 @@ const Login = ({ handleLogin }) => {
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
-        handleLogin(password, userName);
+        handleLogin(password, userName, setPassword, setUserName);
         e.preventDefault();
     };
     console.log(userName, password);
