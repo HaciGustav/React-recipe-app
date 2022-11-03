@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Route, Routes } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import About from './pages/about/About';
 import Details from './pages/details/Details';
@@ -28,7 +28,17 @@ function App() {
                     <Navbar />
                     <Routes>
                         <Route
-                            path="/home"
+                            path="/"
+                            element={
+                                <Home
+                                    loading={loading}
+                                    setLoading={setLoading}
+                                    handleLogout={handleLogout}
+                                />
+                            }
+                        />
+                        <Route
+                            path="*"
                             element={
                                 <Home
                                     loading={loading}
@@ -39,11 +49,19 @@ function App() {
                         />
                         <Route path="/details/:id" element={<Details />} />
                         <Route path="/about" element={<About />} />
-                        <Route path="/" element={<Login />} />
                     </Routes>
                 </>
             ) : (
-                <Login handleLogin={handleLogin} />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={<Login handleLogin={handleLogin} />}
+                    />
+                    <Route
+                        path="*"
+                        element={<Login handleLogin={handleLogin} />}
+                    />
+                </Routes>
             )}
         </BrowserRouter>
     );

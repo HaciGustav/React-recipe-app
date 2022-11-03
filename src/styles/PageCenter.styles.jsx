@@ -6,7 +6,7 @@ export const PageCenter = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(${({ bgImg }) => bgImg && './img/bgImg.jpg'});
+    background-image: url(${({ bgImg }) => bgImg && bgImg});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const BgDiv = styled.div`
-    background-image: url(${({ bgImg }) => bgImg && './img/about-bgImg.jpg'});
+    background-image: url(${({ bgImg }) => bgImg && bgImg});
     background-position: center;
     background-size: cover;
     position: absolute;

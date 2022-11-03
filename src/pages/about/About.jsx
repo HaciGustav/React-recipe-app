@@ -1,14 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-
 import { BackButton } from '../../styles/Inputs.styles';
 import { BgDiv, Container, P } from './About.styled';
+import bgImg from '../../img/about-bgImg.jpg';
 
 const About = () => {
     const navigate = useNavigate();
     return (
         <>
-            <BgDiv bgImg>
+            <BgDiv bgImg={bgImg}>
                 <Container>
                     <h1>Hi I'm Mehmet</h1>
                     <P>

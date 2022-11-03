@@ -4,7 +4,7 @@ import { Logo } from '../../components/navbar/Navbar.styled';
 import { FlexColumn } from '../../styles/Containers.styles';
 import { Button, Form, Input } from '../../styles/Inputs.styles';
 import { PageCenter } from '../../styles/PageCenter.styles';
-
+import bgImg from '../../img/bgImg.jpg';
 const Login = ({ handleLogin }) => {
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
@@ -17,7 +17,7 @@ const Login = ({ handleLogin }) => {
     const navigate = useNavigate();
 
     return (
-        <PageCenter bgImg>
+        <PageCenter bgImg={bgImg}>
             <Form>
                 <FlexColumn>
                     <Logo>Explorateur de Saveur</Logo>
@@ -41,7 +41,7 @@ const Login = ({ handleLogin }) => {
                     <Button
                         onClick={(e) => {
                             handleSubmit(e);
-                            navigate('/home');
+                            navigate('/');
                         }}
                         type="submit">
                         Login

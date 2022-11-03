@@ -9,7 +9,7 @@ const Navbar = ({ handleLogout }) => {
             <Logo onClick={() => navigate('/home')}>Explorateur de Saveur</Logo>
             <Ul>
                 <Li>
-                    <Link to="/home">Home</Link>
+                    <Link to="/">Home</Link>
                 </Li>
                 <Li>
                     <Link to="/about">About</Link>
@@ -26,6 +26,7 @@ const Navbar = ({ handleLogout }) => {
                         to="/"
                         onClick={() => {
                             handleLogout();
+                            navigate('/');
                         }}>
                         Logout
                     </Link>
