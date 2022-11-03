@@ -6,6 +6,7 @@ import About from './pages/about/About';
 import Details from './pages/details/Details';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
+import NotFound from './pages/NotFound';
 
 function App() {
     const [user, setUser] = useState(false);
@@ -57,10 +58,7 @@ function App() {
                         path="/"
                         element={<Login handleLogin={handleLogin} />}
                     />
-                    <Route
-                        path="*"
-                        element={<Login handleLogin={handleLogin} />}
-                    />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             )}
         </BrowserRouter>
